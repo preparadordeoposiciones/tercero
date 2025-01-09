@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .pregunta {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .opcion {
+            margin: 10px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://formsubmit.co/PREPARADORDEOPOSICIONES@GMAIL.COM" method="POST">
+        <div class="pregunta">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+        </div>
+
+        <div class="pregunta">
+            <p>1. ¿Cuál es la capital de Francia?</p>
+            <div class="opcion">
+                <input type="radio" id="p1a" name="p1" value="Londres" required>
+                <label for="p1a">Londres</label>
+            </div>
+            <div class="opcion">
+                <input type="radio" id="p1b" name="p1" value="París">
+                <label for="p1b">París</label>
+            </div>
+            <div class="opcion">
+                <input type="radio" id="p1c" name="p1" value="Madrid">
+                <label for="p1c">Madrid</label>
+            </div>
+        </div>
+
+        <div class="pregunta">
+            <p>2. ¿Cuál es el resultado de 2 + 2?</p>
+            <div class="opcion">
+                <input type="radio" id="p2a" name="p2" value="3" required>
+                <label for="p2a">3</label>
+            </div>
+            <div class="opcion">
+                <input type="radio" id="p2b" name="p2" value="4">
+                <label for="p2b">4</label>
+            </div>
+            <div class="opcion">
+                <input type="radio" id="p2c" name="p2" value="5">
+                <label for="p2c">5</label>
+            </div>
+        </div>
+
+        <button type="submit">Enviar respuestas</button>
+    </form>
+</body>
+</html>
